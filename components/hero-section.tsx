@@ -4,7 +4,7 @@ import ParticlesBackground from "@/components/particles-background";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center bg-white overflow-hidden py-16 sm:py-20 lg:py-72">
+    <section className="relative flex items-center justify-center bg-white overflow-hidden py-16 sm:py-20 lg:py-50">
       <ParticlesBackground />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -7,6 +7,7 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import ProjectMedia from "@/components/project-media";
 import ParticlesBackground from "@/components/particles-background";
 import GradientText from "@/components/gradient-text";
+import ImageCarousel from "@/components/image-carousel";
 
 const project = {
   title: "Medical AI Evaluation",
@@ -50,12 +51,12 @@ const teamMembers = [
   },
 ];
 
-const trustedByLogos = [
-  { name: "FDA", image: "/placeholder.svg?height=48&width=120" },
-  { name: "WHO", image: "/placeholder.svg?height=48&width=120" },
-  { name: "Mayo Clinic", image: "/placeholder.svg?height=48&width=120" },
-  { name: "Johns Hopkins", image: "/placeholder.svg?height=48&width=120" },
-];
+// const trustedByLogos = [
+//   { name: "FDA", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "WHO", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "Mayo Clinic", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "Johns Hopkins", image: "/placeholder.svg?height=48&width=120" },
+// ];
 
 const solutionFeatures = [
   {
@@ -94,11 +95,35 @@ const solutionFeatures = [
   },
 ];
 
-const successMetrics = [
-  { percentage: "95%", description: "accuracy in model validation" },
-  { percentage: "200+", description: "AI models evaluated" },
-  { percentage: "50+", description: "healthcare institutions served" },
-  { percentage: "99.9%", description: "system uptime reliability" },
+const carouselImages = [
+  {
+    src: "/medicaleval/slides/slide2.png",
+    alt: "Medical AI Evaluation Dashboard",
+  },
+  {
+    src: "/medicaleval/slides/slide3.png",
+    alt: "AI Model Performance Analysis",
+  },
+  {
+    src: "/medicaleval/slides/slide4.png",
+    alt: "Clinical Decision Support",
+  },
+  {
+    src: "/medicaleval/slides/slide5.png",
+    alt: "Healthcare Data Visualization",
+  },
+  {
+    src: "/medicaleval/slides/slide6.png",
+    alt: "Medical AI Research Platform",
+  },
+  {
+    src: "/medicaleval/slides/slide7.png",
+    alt: "Clinical Outcome Metrics",
+  },
+  {
+    src: "/medicaleval/slides/slide8.png",
+    alt: "AI Model Validation Results",
+  },
 ];
 
 export default function MedicalAIEvaluationPage() {
@@ -157,7 +182,7 @@ export default function MedicalAIEvaluationPage() {
       </section>
 
       {/* About Medical AI Evaluation Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl sm:text-5xl font-bold mb-6">
@@ -178,7 +203,7 @@ export default function MedicalAIEvaluationPage() {
             </div>
 
             {/* Trusted By Logos */}
-            <div className="mt-12">
+            {/*<div className="mt-12">
               <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
                 Trusted By
               </h3>
@@ -196,13 +221,13 @@ export default function MedicalAIEvaluationPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
 
       {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-20 bg-blue-50/40">
+      <section className="py-16 lg:py-25 bg-blue-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Our Mission */}
@@ -254,10 +279,11 @@ export default function MedicalAIEvaluationPage() {
       </section>
 
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+      <section className="py-16 lg:py-25">
+        <div className="max-w-7xl mx-auto px-9 sm:px-4 lg:px-1">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-center">
+            {/* Text column - spans 2 of 6 columns */}
+            <div className="order-2 lg:order-1 lg:col-span-2">
               <h2 className="text-3xl sm:text-4xl font-bold mb-8">
                 Our <GradientText variant="blue">Solution</GradientText>
               </h2>
@@ -271,12 +297,13 @@ export default function MedicalAIEvaluationPage() {
               </div>
             </div>
 
-            <div className="order-1 lg:order-2">
+            {/* Image column - spans 4 of 6 columns */}
+            <div className="order-1 lg:order-2 lg:col-span-4">
               <div className="rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src="/medicaleval/scores.png"
                   alt="Medical Evaluation Scores"
-                  className="w-full h-auto"
+                  className="w-full h-auto max-w-none"
                 />
               </div>
             </div>
@@ -285,7 +312,7 @@ export default function MedicalAIEvaluationPage() {
       </section>
 
       {/* Why Medical AI Evaluation is Unique Section */}
-      <section className="py-16 lg:py-20 bg-blue-50/40">
+      <section className="py-16 lg:py-25 bg-blue-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -296,6 +323,7 @@ export default function MedicalAIEvaluationPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            {/* Unique Value List */}
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Unique <GradientText variant="blue">Value</GradientText>
@@ -328,30 +356,70 @@ export default function MedicalAIEvaluationPage() {
               </ul>
             </div>
 
-            <div>
+            {/* Evidence of Success Metrics */}
+            <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
-                Evidence of{" "}
-                <GradientText variant="success">Success</GradientText>
+                Evidence of <GradientText variant="blue">Success</GradientText>
               </h3>
-              <div className="grid grid-cols-2 gap-6">
-                {successMetrics.map((metric, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">
-                      {metric.percentage}
-                    </div>
-                    <div className="text-sm text-gray-700">
-                      {metric.description}
-                    </div>
+              <div className="grid grid-cols-2 lg:flex lg:justify-between lg:items-center">
+                <div className="text-center mb-4 lg:mb-0">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    6+
                   </div>
-                ))}
+                  <div className="text-sm text-gray-700">
+                    AI Models Evaluated
+                  </div>
+                </div>
+                <div className="text-center mb-4 lg:mb-0">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    3+
+                  </div>
+                  <div className="text-sm text-gray-700">
+                    Languages Supported
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8 text-center md:text-left">
+                <div className="text-3xl font-bold text-blue-600 mb-2">
+                  Automated + LLM-as-a-Judge
+                </div>
+                <div className="text-sm text-gray-700">Dual Scoring System</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Image Carousel Section */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <GradientText variant="blue">Medical AI Evaluation</GradientText>{" "}
+              Platform Showcase
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              These slides demonstrate our comprehensive approach to assessing
+              medical AI systems, featuring our dashboard interface, scoring
+              mechanisms, and validation methodologies.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto aspect-video">
+            <ImageCarousel
+              images={carouselImages}
+              autoPlay={true}
+              autoPlayInterval={10000}
+              showDots={true}
+              showArrows={true}
+              imageClassName="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Meet the Team Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">

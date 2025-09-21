@@ -29,22 +29,11 @@ const projects = [
     title: "Sanjeevani App",
     tagline:
       "Digital healthcare platform connecting patients with medical professionals.",
-    thumbnail: "/placeholder.svg?height=300&width=400",
+    thumbnail: "/sanjeevani/sang.png?height=300&width=400",
     description:
       "Seamless telemedicine solution for accessible and quality healthcare delivery.",
     link: "https://sanjivni-app.vercel.app/",
   },
-
-  // TO COMMENT OUT A PROJECT:
-  // Simply add /* before the project object and */ after it
-  // Example to hide the Medical AI Evaluation project:
-  // /*
-  // {
-  //   id: "medical-ai-evaluation",
-  //   title: "Medical AI Evaluation",
-  //   ...
-  // },
-  // */
 ];
 
 export default function ProjectCards() {
@@ -53,7 +42,8 @@ export default function ProjectCards() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-balance">
-            Our AI Health <GradientText variant="blue">Projects</GradientText>
+            Our <GradientText variant="green"> AI Health </GradientText>{" "}
+            Projects
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
             Explore our innovative AI-powered healthcare solutions that are

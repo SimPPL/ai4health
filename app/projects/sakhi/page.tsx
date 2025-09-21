@@ -7,6 +7,7 @@ import { ExternalLink, ArrowLeft } from "lucide-react";
 import ProjectMedia from "@/components/project-media";
 import ParticlesBackground from "@/components/particles-background";
 import GradientText from "@/components/gradient-text";
+import ImageCarousel from "@/components/image-carousel";
 
 const project = {
   title: "Sakhi",
@@ -50,12 +51,12 @@ const teamMembers = [
   },
 ];
 
-const trustedByLogos = [
-  { name: "MIT", image: "/sakhi/logos/mit.png" },
-  { name: "UNICEF", image: "/sakhi/logos/unicef.png" },
-  { name: "World Bank", image: "/sakhi/logos/world-bank.png" },
-  { name: "BRICS", image: "/sakhi/logos/brics.png" },
-];
+// const trustedByLogos = [
+//   { name: "MIT", image: "/sakhi/logos/mit.png" },
+//   { name: "UNICEF", image: "/sakhi/logos/unicef.png" },
+//   { name: "World Bank", image: "/sakhi/logos/world-bank.png" },
+//   { name: "BRICS", image: "/sakhi/logos/brics.png" },
+// ];
 
 const solutionFeatures = [
   {
@@ -90,6 +91,37 @@ const successMetrics = [
   { percentage: "60%", description: "accessed information proactively" },
   { percentage: "35%", description: "used 'Ask a Worker' feature" },
   { percentage: "5-7", description: "minutes average session time" },
+];
+
+const carouselImages = [
+  {
+    src: "/sakhi/slides/slide1.png",
+    alt: "Sakhi Platform Overview",
+  },
+  {
+    src: "/sakhi/slides/slide2.png",
+    alt: "Dashboard Analytics",
+  },
+  {
+    src: "/sakhi/slides/slide3.png",
+    alt: "Community Impact",
+  },
+  {
+    src: "/sakhi/slides/slide4.png",
+    alt: "Sakhi Hero Interface",
+  },
+  {
+    src: "/sakhi/slides/slide5.png",
+    alt: "Sakhi User Interface",
+  },
+  {
+    src: "/sakhi/slides/slide6.png",
+    alt: "Sakhi Mobile Interface",
+  },
+  {
+    src: "/sakhi/slides/slide7.png",
+    alt: "Sakhi Mobile Interface",
+  },
 ];
 
 export default function SakhiPage() {
@@ -148,7 +180,7 @@ export default function SakhiPage() {
       </section>
 
       {/* About Sakhi Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl sm:text-5xl font-bold mb-6">
@@ -175,7 +207,7 @@ export default function SakhiPage() {
             </div>
 
             {/* Trusted By Logos */}
-            <div className="mt-12">
+            {/*<div className="mt-12">
               <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
                 Trusted By
               </h3>
@@ -193,13 +225,13 @@ export default function SakhiPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
 
       {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-20 bg-rose-50/40">
+      <section className="py-16 lg:py-25 bg-rose-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Our Mission */}
@@ -254,7 +286,7 @@ export default function SakhiPage() {
       </section>
 
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -288,7 +320,7 @@ export default function SakhiPage() {
       </section>
 
       {/* Why Sakhi is Unique Section */}
-      <section className="py-16 lg:py-20 bg-rose-50/40">
+      <section className="py-16 lg:py-25 bg-rose-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -333,7 +365,7 @@ export default function SakhiPage() {
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Evidence of{" "}
-                <GradientText variant="success">Success</GradientText>
+                <GradientText variant="roseToPlum">Success</GradientText>
               </h3>
               <div className="grid grid-cols-2 gap-6">
                 {successMetrics.map((metric, index) => (
@@ -352,8 +384,37 @@ export default function SakhiPage() {
         </div>
       </section>
 
+      {/* Image Carousel Section */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <GradientText variant="roseToPlum">Sakhi</GradientText> Platform
+              Showcase
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore the key features and interfaces of our AI-powered maternal
+              health platform. These slides highlight Sakhi's user experience,
+              dashboard capabilities, and real-world impact on healthcare
+              accessibility.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto aspect-video">
+            <ImageCarousel
+              images={carouselImages}
+              autoPlay={true}
+              autoPlayInterval={10000}
+              showDots={true}
+              showArrows={true}
+              imageClassName="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Meet the Team Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25 bg-rose-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">

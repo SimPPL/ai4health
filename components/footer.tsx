@@ -25,37 +25,16 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold text-gray-900 mb-4">
-              Contact
-            </h4>
-            <div className="space-y-2 text-sm text-gray-600">
-              <p>hello@ai4health.org</p>
-              <p>+1 (555) AI4-HEALTH</p>
-              <p>AI Innovation Center</p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">
               Follow Us
             </h4>
-            <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
+            <div>
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/sim-ppl/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
               >
                 LinkedIn
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-              >
-                Twitter
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors text-sm"
-              >
-                GitHub
               </Link>
             </div>
           </div>

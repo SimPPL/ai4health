@@ -14,7 +14,7 @@ const project = {
     "Digital healthcare platform connecting patients with medical professionals",
   heroMedia: {
     type: "image" as const,
-    src: "/placeholder.svg?height=600&width=1200",
+    src: "/sanjeevani/ai_image_3.jpg?height=600&width=1200",
   },
   externalLink: "https://sanjivni-app.vercel.app/",
 };
@@ -50,33 +50,44 @@ const teamMembers = [
   },
 ];
 
-const trustedByLogos = [
-  { name: "Ministry of Health", image: "/placeholder.svg?height=48&width=120" },
-  { name: "NITI Aayog", image: "/placeholder.svg?height=48&width=120" },
-  { name: "Apollo Hospitals", image: "/placeholder.svg?height=48&width=120" },
-  { name: "Fortis Healthcare", image: "/placeholder.svg?height=48&width=120" },
-];
+// const trustedByLogos = [
+//   { name: "Ministry of Health", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "NITI Aayog", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "Apollo Hospitals", image: "/placeholder.svg?height=48&width=120" },
+//   { name: "Fortis Healthcare", image: "/placeholder.svg?height=48&width=120" },
+// ];
 
 const solutionFeatures = [
   {
-    title: "24/7 video consultation platform with certified doctors",
-    icon: "💻",
+    title:
+      "An intelligent, couple-centric intake form designed for fertility cases.",
+    icon: "📝",
   },
   {
-    title: "Integrated prescription and medicine delivery system",
-    icon: "💊",
+    title:
+      "A unified dashboard for clinicians to review all patient data and reports at a glance.",
+    icon: "🖥️",
   },
   {
-    title: "Multi-language support for regional accessibility",
+    title:
+      "A secure and simple portal for patients to upload all past medical documents.",
+    icon: "📂",
+  },
+  {
+    title:
+      "A privacy-first, local/offline architecture to ensure complete data security.",
+    icon: "🔒",
+  },
+  {
+    title:
+      "Smart appointment scheduling to manage multiple clinic and OPD locations.",
+    icon: "🗓️",
+  },
+  {
+    title:
+      "Automated patient notifications and bilingual support (English & Hindi).",
     icon: "🗣️",
   },
-];
-
-const successMetrics = [
-  { percentage: "10K+", description: "active users monthly" },
-  { percentage: "500+", description: "verified doctors on platform" },
-  { percentage: "85%", description: "patient satisfaction rate" },
-  { percentage: "2-5", description: "minutes average wait time" },
 ];
 
 export default function SanjeevaniAppPage() {
@@ -133,7 +144,7 @@ export default function SanjeevaniAppPage() {
       </section>
 
       {/* About Sanjeevani App Section */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-25">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl sm:text-5xl font-bold mb-6">
@@ -141,23 +152,22 @@ export default function SanjeevaniAppPage() {
             </h2>
             <div className="text-gray-700 mb-8 leading-relaxed space-y-4 text-lg">
               <p>
-                Sanjeevani App represents the future of accessible healthcare
-                delivery through digital innovation. Our comprehensive
-                telemedicine platform enables patients to connect with qualified
-                medical professionals from the comfort of their homes, breaking
-                down geographical barriers to quality healthcare.
-              </p>
-              <p>
-                With integrated features for video consultations, prescription
-                management, medicine delivery, and health record keeping,
-                Sanjeevani App provides a seamless healthcare experience. Our
-                platform serves thousands of patients across India, making
-                healthcare more accessible, affordable, and convenient for all.
+                Sangeevani is a purpose-built clinical software solution
+                designed specifically for the nuanced needs of Infertility and
+                OB-GYN practices. Developed in close collaboration with medical
+                professionals, it moves beyond generic patient management to
+                tackle the core challenge of data collection. Our platform
+                automates and structures the entire patient intake process, from
+                initial registration to detailed medical history. By providing a
+                comprehensive digital profile for each couple before their first
+                consultation, Sangeevani empowers clinicians to dedicate their
+                valuable time to diagnosis and care, rather than repetitive data
+                entry.
               </p>
             </div>
 
             {/* Trusted By Logos */}
-            <div className="mt-12">
+            {/*<div className="mt-12">
               <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wide mb-8">
                 Trusted By
               </h3>
@@ -175,13 +185,13 @@ export default function SanjeevaniAppPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
 
       {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-20 bg-green-50/40">
+      <section className="py-16 lg:py-25 bg-green-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Our Mission */}
@@ -197,10 +207,14 @@ export default function SanjeevaniAppPage() {
               </h2>
 
               <p className="text-base text-gray-700 leading-relaxed">
-                Our mission is to democratize healthcare access by leveraging
-                digital technology to connect patients with quality medical
-                care, regardless of their location or economic status, making
-                healthcare truly accessible to all.
+                Our mission is to empower fertility specialists with the
+                structured, comprehensive data they need to conduct highly
+                efficient and effective consultations. We aim to transform the
+                patient onboarding experience by replacing time-consuming verbal
+                questionnaires with an intelligent, digital intake system. By
+                doing so, we save valuable clinical time, reduce administrative
+                burden, and enable doctors to engage in deeper, more meaningful
+                conversations with their patients from the very first minute.
               </p>
             </div>
 
@@ -217,10 +231,17 @@ export default function SanjeevaniAppPage() {
               </h2>
 
               <p className="text-base text-gray-700 leading-relaxed">
-                We address the critical challenge of healthcare accessibility in
-                remote areas, long waiting times for consultations, and the need
-                for affordable medical care. Our platform bridges these gaps
-                through innovative telemedicine solutions.
+                We are addressing the critical workflow challenges that
+                specialized fertility clinics face daily. Valuable consultation
+                time is consumed by verbally collecting extensive patient
+                histories, while doctors are forced to piece together a
+                narrative from disorganized, fragmented medical records. This
+                problem is compounded by the limitations of generic clinic
+                software, which lacks the specific data fields essential for
+                infertility cases. Furthermore, a significant challenge for
+                clinicians is the concern over data privacy on third-party cloud
+                platforms, creating a need for a secure and trusted solution
+                they can control.
               </p>
             </div>
           </div>
@@ -228,10 +249,11 @@ export default function SanjeevaniAppPage() {
       </section>
 
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+      <section className="py-16 lg:py-25">
+        <div className="max-w-7xl mx-auto px-9 sm:px-4 lg:px-1">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-center">
+            {/* Text column - spans 2 of 6 columns */}
+            <div className="order-2 lg:order-1 lg:col-span-2">
               <h2 className="text-3xl sm:text-4xl font-bold mb-8">
                 Our <GradientText variant="green">Solution</GradientText>
               </h2>
@@ -245,17 +267,22 @@ export default function SanjeevaniAppPage() {
               </div>
             </div>
 
-            <div className="order-1 lg:order-2">
-              <div className="aspect-[9/16] max-w-xs mx-auto bg-gradient-to-br from-green-100 to-green-200 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
-                <div className="text-6xl">📱</div>
+            {/* Image column - spans 4 of 6 columns */}
+            <div className="order-1 lg:order-2 lg:col-span-4">
+              <div className="rounded-xl overflow-hidden shadow-2xl">
+                <img
+                  src="/sanjeevani/working.png"
+                  alt="Sanjeevani App Solution on Mobile"
+                  className="w-full h-auto max-w-none"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Sanjeevani App is Unique Section */}
-      <section className="py-16 lg:py-20 bg-green-50/40">
+      {/* --- MODIFIED SECTION: "Why Sanjeevani App is Unique" --- */}
+      <section className="py-16 lg:py-25 bg-green-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -264,63 +291,45 @@ export default function SanjeevaniAppPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-6">
-                Unique <GradientText variant="green">Value</GradientText>
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">
-                    24/7 availability with certified medical professionals
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">
-                    Integrated medicine delivery and prescription management
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">
-                    Multi-language support for diverse user base
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">
-                    Affordable pricing model for all economic segments
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-6">
-                Evidence of{" "}
-                <GradientText variant="success">Success</GradientText>
-              </h3>
-              <div className="grid grid-cols-2 gap-6">
-                {successMetrics.map((metric, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-green-600 mb-2">
-                      {metric.percentage}
-                    </div>
-                    <div className="text-sm text-gray-700">
-                      {metric.description}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+          {/* Centered the "Unique Value" block */}
+          <div className="max-w-md mx-auto">
+            <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              Unique <GradientText variant="green">Value</GradientText>
+            </h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  24/7 availability with certified medical professionals
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Designed for Clinical Efficiency: Its primary purpose is to
+                  save the doctor’s time.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Co-Created with Specialists: Developed in direct partnership
+                  with clinicians to solve real-world problems.
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700">
+                  Affordable pricing model for all economic segments
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 lg:py-20">
+      {/*<section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -331,7 +340,6 @@ export default function SanjeevaniAppPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 justify-center">
             {teamMembers.map((member, index) => (
               <div key={index} className="text-center max-w-xs mx-auto px-4">
-                {/* Bigger image circle */}
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gray-200 shadow-lg">
                   <img
                     src={member.image}
@@ -340,26 +348,22 @@ export default function SanjeevaniAppPage() {
                   />
                 </div>
 
-                {/* Name */}
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">
                   {member.name}
                 </h3>
 
-                {/* Role */}
                 <p className="text-xl text-black font-medium mb-2">
                   {member.role}
                 </p>
 
-                {/* Bio */}
                 <p className="text-lg text-gray-700 mb-1">{member.bio}</p>
 
-                {/* Education */}
                 <p className="text-lg text-gray-500">{member.education}</p>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <Footer />
     </main>
