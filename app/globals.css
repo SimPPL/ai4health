@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Custom gradient text utilities */
+.gradient-text-blue {
+    @apply bg-gradient-to-r from-sky-400 to-blue-800 bg-clip-text text-transparent;
+}
+
+.gradient-text-green {
+    @apply bg-gradient-to-r from-emerald-400 to-teal-700 bg-clip-text text-transparent;
+}
+
+.gradient-text-teal {
+    @apply bg-gradient-to-r from-teal-400 to-cyan-700 bg-clip-text text-transparent;
+}
+
+.gradient-text-purple {
+    @apply bg-gradient-to-r from-purple-400 to-indigo-700 bg-clip-text text-transparent;
+}
+
+.gradient-text-indigo {
+    @apply bg-gradient-to-r from-indigo-400 to-purple-700 bg-clip-text text-transparent;
+}
+
+.gradient-text-success {
+    @apply bg-gradient-to-r from-green-400 to-emerald-700 bg-clip-text text-transparent;
+}
+
+/* Enhanced text readability */
+.text-content {
+    @apply text-gray-700 leading-relaxed;
+}
+
+.text-content-dark {
+    @apply text-gray-800 leading-relaxed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-feature-settings:
+        "rlig" 1,
+        "calt" 1;
+}
