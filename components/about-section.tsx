@@ -5,7 +5,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-balance">
-              About AI 4 Health
+              About Health Literacy AI
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 text-pretty leading-relaxed">
               We are at the forefront of artificial intelligence innovation in

@@ -165,7 +165,7 @@ export default function SakhiPage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
                   >
-                    Visit Project
+                    Visit Initiative
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
@@ -187,7 +187,7 @@ export default function SakhiPage() {
               About <GradientText variant="roseToPlum">Sakhi</GradientText>
             </h2>
             <div className="text-gray-700 mb-8 leading-relaxed space-y-4 text-lg">
-              <p>
+              <p className="text-justify">
                 Sakhi is an MIT-incubated AI-powered digital health literacy
                 platform addressing the critical issue of maternal mortality in
                 India (103 deaths per 100,000 live births) by targeting the
@@ -196,7 +196,7 @@ export default function SakhiPage() {
                 expectant mothers while offering healthcare service providers
                 real-time analytics to monitor and respond to community needs.
               </p>
-              <p>
+              <p className="text-justify">
                 Our work has received recognition from UNICEF's Gender Response
                 Innovation Challenge and has been featured at the World Bank and
                 BRICS Youth Innovation Summit. The platform has been
@@ -230,63 +230,8 @@ export default function SakhiPage() {
         </div>
       </section>
 
-      {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-25 bg-rose-50/40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Our Mission */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-pink-100 to-pink-50 rounded-full flex items-center justify-center border-4 border-pink-200 shadow-lg">
-                  <div className="text-3xl">🎯</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="roseToPlum">OUR MISSION</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                Our mission is to transform maternal and neonatal healthcare in
-                rural and marginalized communities in India. We aim to drive
-                women's agency and improve health outcomes by leveraging AI,
-                research, and grassroots expertise. We empower women with the
-                digital literacy and economic independence needed to make
-                informed decisions about their bodies and futures, ultimately
-                contributing to a more equitable society.
-              </p>
-            </div>
-
-            {/* Challenges */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-pink-100 to-pink-50 rounded-full flex items-center justify-center border-4 border-pink-200 shadow-lg">
-                  <div className="text-3xl">🔍</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="roseToPlum">CHALLENGES</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                Despite significant national progress, India still faces major
-                challenges in improving maternal and child health outcomes. Many
-                women lack reliable, timely health information in their local
-                languages, leading to delays in seeking care and missed
-                opportunities for preventive interventions. Fragmented
-                healthcare systems and a digital divide often leave frontline
-                health workers without real-time data or the tools they need to
-                provide personalized, timely support, especially during critical
-                periods like migration to maternal homes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-25">
+      <section className="py-16 lg:py-25 bg-rose-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -297,7 +242,9 @@ export default function SakhiPage() {
                 {solutionFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="text-2xl">{feature.icon}</div>
-                    <p className="text-base text-gray-700">{feature.title}</p>
+                    <p className="text-base text-gray-700 text-justify">
+                      {feature.title}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -320,7 +267,7 @@ export default function SakhiPage() {
       </section>
 
       {/* Why Sakhi is Unique Section */}
-      <section className="py-16 lg:py-25 bg-rose-50/40">
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -414,7 +361,7 @@ export default function SakhiPage() {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 lg:py-25 bg-rose-50/40">
+      <section className="py-16 lg:py-25 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">

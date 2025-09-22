@@ -19,7 +19,9 @@ export default function Navbar() {
               height={32}
               className="w-8 h-8"
             />
-            <span className="text-xl font-bold text-gray-900">AI 4 Health</span>
+            <span className="text-xl font-bold text-gray-900">
+              Health Literacy AI
+            </span>
           </Link>
 
           <div className="hidden md:flex space-x-8">

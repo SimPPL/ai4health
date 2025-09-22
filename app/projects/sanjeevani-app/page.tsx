@@ -129,7 +129,7 @@ export default function SanjeevaniAppPage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
                   >
-                    Visit Project
+                    Visit Initiative
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
@@ -151,7 +151,7 @@ export default function SanjeevaniAppPage() {
               About <GradientText variant="green">Sanjeevani App</GradientText>
             </h2>
             <div className="text-gray-700 mb-8 leading-relaxed space-y-4 text-lg">
-              <p>
+              <p className="text-justify">
                 Sangeevani is a purpose-built clinical software solution
                 designed specifically for the nuanced needs of Infertility and
                 OB-GYN practices. Developed in close collaboration with medical
@@ -190,66 +190,8 @@ export default function SanjeevaniAppPage() {
         </div>
       </section>
 
-      {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-25 bg-green-50/40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Our Mission */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-green-100 to-green-50 rounded-full flex items-center justify-center border-4 border-green-200 shadow-lg">
-                  <div className="text-3xl">🎯</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="green">OUR MISSION</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                Our mission is to empower fertility specialists with the
-                structured, comprehensive data they need to conduct highly
-                efficient and effective consultations. We aim to transform the
-                patient onboarding experience by replacing time-consuming verbal
-                questionnaires with an intelligent, digital intake system. By
-                doing so, we save valuable clinical time, reduce administrative
-                burden, and enable doctors to engage in deeper, more meaningful
-                conversations with their patients from the very first minute.
-              </p>
-            </div>
-
-            {/* Challenges */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-green-100 to-green-50 rounded-full flex items-center justify-center border-4 border-green-200 shadow-lg">
-                  <div className="text-3xl">🔍</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="green">CHALLENGES</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                We are addressing the critical workflow challenges that
-                specialized fertility clinics face daily. Valuable consultation
-                time is consumed by verbally collecting extensive patient
-                histories, while doctors are forced to piece together a
-                narrative from disorganized, fragmented medical records. This
-                problem is compounded by the limitations of generic clinic
-                software, which lacks the specific data fields essential for
-                infertility cases. Furthermore, a significant challenge for
-                clinicians is the concern over data privacy on third-party cloud
-                platforms, creating a need for a secure and trusted solution
-                they can control.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-25">
+      <section className="py-16 lg:py-25 bg-green-50/40">
         <div className="max-w-7xl mx-auto px-9 sm:px-4 lg:px-1">
           <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-center">
             {/* Text column - spans 2 of 6 columns */}
@@ -261,7 +203,9 @@ export default function SanjeevaniAppPage() {
                 {solutionFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="text-2xl">{feature.icon}</div>
-                    <p className="text-base text-gray-700">{feature.title}</p>
+                    <p className="text-base text-gray-700 text-justify">
+                      {feature.title}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -282,7 +226,7 @@ export default function SanjeevaniAppPage() {
       </section>
 
       {/* --- MODIFIED SECTION: "Why Sanjeevani App is Unique" --- */}
-      <section className="py-16 lg:py-25 bg-green-50/40">
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">

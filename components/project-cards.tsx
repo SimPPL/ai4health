@@ -16,7 +16,7 @@ const projects = [
   },
   {
     id: "medical-ai-evaluation",
-    title: "Medical AI Evaluation",
+    title: "Medical LLM Evaluation",
     tagline:
       "Comprehensive evaluation platform for medical AI systems and algorithms.",
     thumbnail: "/medicaleval/medeval.png?height=300&width=400",
@@ -45,7 +45,7 @@ export default function ProjectCards() {
             Our <GradientText variant="green"> AI Health </GradientText>{" "}
             Projects
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-pretty text-justify">
             Explore our innovative AI-powered healthcare solutions that are
             transforming medical care and improving health outcomes.
           </p>
@@ -70,10 +70,10 @@ export default function ProjectCards() {
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 text-balance">
                   {project.title}
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 text-pretty">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 text-pretty text-justify">
                   {project.tagline}
                 </p>
-                <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6 text-pretty">
+                <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6 text-pretty text-justify">
                   {project.description}
                 </p>
 

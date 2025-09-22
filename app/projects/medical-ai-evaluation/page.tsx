@@ -10,7 +10,7 @@ import GradientText from "@/components/gradient-text";
 import ImageCarousel from "@/components/image-carousel";
 
 const project = {
-  title: "Medical AI Evaluation",
+  title: "Medical LLM Evaluation",
   tagline:
     "Comprehensive evaluation platform for medical AI systems and algorithms",
   heroMedia: {
@@ -98,7 +98,7 @@ const solutionFeatures = [
 const carouselImages = [
   {
     src: "/medicaleval/slides/slide2.png",
-    alt: "Medical AI Evaluation Dashboard",
+    alt: "Medical LLM Evaluation Dashboard",
   },
   {
     src: "/medicaleval/slides/slide3.png",
@@ -148,9 +148,7 @@ export default function MedicalAIEvaluationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-balance">
-                <GradientText variant="blue">
-                  Medical AI Evaluation
-                </GradientText>
+                <GradientText variant="blue">MedicaLLM Evaluation</GradientText>
               </h1>
               <p className="text-lg sm:text-2xl text-gray-700 mb-8 text-pretty">
                 {project.tagline}
@@ -167,7 +165,7 @@ export default function MedicalAIEvaluationPage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
                   >
-                    Visit Project
+                    Visit Initiative
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
@@ -181,18 +179,17 @@ export default function MedicalAIEvaluationPage() {
         </div>
       </section>
 
-      {/* About Medical AI Evaluation Section */}
+      {/* About Medical LLM Evaluation Section */}
       <section className="py-16 lg:py-25">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl sm:text-5xl font-bold mb-6">
-              About{" "}
-              <GradientText variant="blue">Medical AI Evaluation</GradientText>
+              About <GradientText variant="blue">LLM Evaluation</GradientText>
             </h2>
             <div className="text-gray-700 mb-8 leading-relaxed space-y-4 text-lg">
-              <p>
-                Our project, Medical AI Evaluation, addresses a critical need in
-                healthcare: ensuring AI-powered language models provide
+              <p className="text-justify">
+                Our project, Medical LLM Evaluation, addresses a critical need
+                in healthcare: ensuring AI-powered language models provide
                 accurate, safe, and culturally relevant information. We've
                 developed a comprehensive framework to evaluate the performance
                 of Large Language Models (LLMs) in answering questions related
@@ -226,60 +223,8 @@ export default function MedicalAIEvaluationPage() {
         </div>
       </section>
 
-      {/* Mission and Challenges Section */}
-      <section className="py-16 lg:py-25 bg-blue-50/40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Our Mission */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-blue-200 shadow-lg">
-                  <div className="text-3xl">🎯</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="blue">OUR MISSION</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                Our mission is to ensure the safe and effective deployment of AI
-                in healthcare. We do this through a rigorous evaluation,
-                testing, and validation process for medical AI models. Our goal
-                is to protect patient safety and improve clinical outcomes by
-                ensuring all AI-generated information is accurate and reliable.
-              </p>
-            </div>
-
-            {/* Challenges */}
-            <div className="text-center">
-              <div className="mb-8">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center border-4 border-blue-200 shadow-lg">
-                  <div className="text-3xl">🔍</div>
-                </div>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                <GradientText variant="blue">CHALLENGES</GradientText>
-              </h2>
-
-              <p className="text-base text-gray-700 leading-relaxed">
-                Healthcare AI presents unique challenges, especially when
-                dealing with patient communication. It's not enough for an AI to
-                simply answer a question; the answer must be medically accurate,
-                free of bias, and safe for a diverse population. Our evaluation
-                framework tackles these challenges head-on by measuring AI
-                performance across multiple dimensions, ensuring responsible AI
-                deployment across diverse medical applications and patient
-                populations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Solution Section */}
-      <section className="py-16 lg:py-25">
+      <section className="py-16 lg:py-25 bg-blue-50/40">
         <div className="max-w-7xl mx-auto px-9 sm:px-4 lg:px-1">
           <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-center">
             {/* Text column - spans 2 of 6 columns */}
@@ -291,7 +236,9 @@ export default function MedicalAIEvaluationPage() {
                 {solutionFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="text-2xl">{feature.icon}</div>
-                    <p className="text-base text-gray-700">{feature.title}</p>
+                    <p className="text-base text-gray-700 text-justify">
+                      {feature.title}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -311,13 +258,12 @@ export default function MedicalAIEvaluationPage() {
         </div>
       </section>
 
-      {/* Why Medical AI Evaluation is Unique Section */}
-      <section className="py-16 lg:py-25 bg-blue-50/40">
+      {/* Why Medical LLM Evaluation is Unique Section */}
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              Why{" "}
-              <GradientText variant="blue">Medical AI Evaluation</GradientText>{" "}
+              Why <GradientText variant="blue">LLM Evaluation</GradientText>{" "}
               Stands Out
             </h2>
           </div>
@@ -356,7 +302,6 @@ export default function MedicalAIEvaluationPage() {
               </ul>
             </div>
 
-            {/* Evidence of Success Metrics */}
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Evidence of <GradientText variant="blue">Success</GradientText>
@@ -368,22 +313,34 @@ export default function MedicalAIEvaluationPage() {
                   </div>
                   <div className="text-sm text-gray-700">
                     AI Models Evaluated
+                    <br />
+                    <span className="font-dark text-sm mt-1">
+                      *Including Cohere's Command-A and Aya
+                    </span>
                   </div>
                 </div>
                 <div className="text-center mb-4 lg:mb-0">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">
-                    3+
-                  </div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">3</div>
                   <div className="text-sm text-gray-700">
                     Languages Supported
+                    <br />
+                    <span className="font-dark text-sm mt-1">
+                      English, Hindi, Marathi
+                    </span>
                   </div>
                 </div>
               </div>
               <div className="mt-8 text-center md:text-left">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
+                <div className="text-xl font-bold text-blue-600 mb-2">
                   Automated + LLM-as-a-Judge
                 </div>
-                <div className="text-sm text-gray-700">Dual Scoring System</div>
+                <div className="text-sm text-gray-700">
+                  <span className="font-medium">Dual Scoring System</span>
+                  <p className="font-dark text-sm mt-1">
+                    *Semantic Similarity, Linguistic Analysis, and LLM-based
+                    Evaluation.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -391,11 +348,11 @@ export default function MedicalAIEvaluationPage() {
       </section>
 
       {/* Image Carousel Section */}
-      <section className="py-24 lg:py-32">
+      <section className="py-24 lg:py-32 bg-blue-50/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              <GradientText variant="blue">Medical AI Evaluation</GradientText>{" "}
+              <GradientText variant="blue">Medical LLM Evaluation</GradientText>{" "}
               Platform Showcase
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -419,7 +376,7 @@ export default function MedicalAIEvaluationPage() {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 lg:py-25 bg-blue-50/40">
+      <section className="py-16 lg:py-25">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
