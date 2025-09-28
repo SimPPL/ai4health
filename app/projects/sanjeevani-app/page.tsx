@@ -21,32 +21,39 @@ const project = {
 
 const teamMembers = [
   {
-    name: "Dr. Rajesh Sharma",
-    role: "Medical Director",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Telemedicine Expert",
-    education: "MD Internal Medicine, AIIMS",
+    name: "Kalash ",
+    role: "CEO",
+    image: "/team/kalash.jpg?height=200&width=200",
+    bio: "",
+    education: "",
   },
   {
-    name: "Neha Gupta",
-    role: "Product Manager",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Healthcare Technology",
-    education: "MBA Healthcare Management, IIM",
+    name: "Abhijeet",
+    role: "CTO",
+    image: "/team/abhijeet_sapar.png?height=200&width=200",
+    bio: "",
+    education: "",
   },
   {
-    name: "Arjun Singh",
-    role: "Lead Developer",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Mobile App Specialist",
-    education: "B.Tech Computer Science, IIT Delhi",
+    name: "Jaimeen",
+    role: "Full Stack Development",
+    image: "/team/jaimeen.png?height=200&width=200",
+    bio: "",
+    education: "",
   },
   {
-    name: "Dr. Kavya Reddy",
-    role: "Clinical Advisor",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Family Medicine Physician",
-    education: "MD Family Medicine, CMC Vellore",
+    name: "Harsh",
+    role: "AI/ML Development",
+    image: "/team/harsh_sangani.png?height=200&width=200",
+    bio: "",
+    education: "",
+  },
+  {
+    name: "Tarun",
+    role: "Cloud Development",
+    image: "/team/tarun.jpg?height=200&width=200",
+    bio: "",
+    education: "",
   },
 ];
 
@@ -152,7 +159,7 @@ export default function SanjeevaniAppPage() {
             </h2>
             <div className="text-gray-700 mb-8 leading-relaxed space-y-4 text-lg">
               <p className="text-justify">
-                Sangeevani is a purpose-built clinical software solution
+                Sanjeevani is a purpose-built clinical software solution
                 designed specifically for the nuanced needs of Infertility and
                 OB-GYN practices. Developed in close collaboration with medical
                 professionals, it moves beyond generic patient management to
@@ -273,7 +280,7 @@ export default function SanjeevaniAppPage() {
       </section>
 
       {/* Meet the Team Section */}
-      {/*<section className="py-16 lg:py-25 bg-green-50/40">
+      <section className="py-16 lg:py-25 bg-green-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
@@ -307,7 +314,7 @@ export default function SanjeevaniAppPage() {
             ))}
           </div>
         </div>
-      </section>*/}
+      </section>
 
       <Footer />
     </main>
